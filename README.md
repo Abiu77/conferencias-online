@@ -15,10 +15,11 @@ mejorar la organización y la experiencia de los participantes.
 
 ### Pasos de Intalación
 1. Clonar el repositorio `https://github.com/Abiu77/conferencias-online.git`.
-2. Instalar dependencias con PNPM o NPM: `pnpm install` o `npm install`.
-3. Instalar dependencias con composer: `composer install`.
+2. Instalar dependencias con composer: `composer install`.
+3. Instalar dependencias con PNPM o NPM: `pnpm install` o `npm install`.
 4. Crear una base de datos en un gestor de base de datos: `webcamp`.
 
 ### Levantar el servidor
-1. `php -S localhost:3000`.
-2. `pnpm run dev` o `npm run dev`.
+1. `pnpm run dev` o `npm run dev`.
+2. Dirigirse a la carpeta `public` `cd .\public\`.
+3. `php -S localhost:3000`. 
