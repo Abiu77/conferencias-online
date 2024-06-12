@@ -54,3 +54,8 @@
     width: min(95%, 120rem);
     margin: 0 auto;
 }
+
+@mixin contenedor-sm {
+    width: min(95%, 60rem);
+    margin: 0 auto;
+}
