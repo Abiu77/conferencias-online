@@ -68,3 +68,64 @@ INSERT INTO `horas` (`id`, `hora`) VALUES
 (6, '17:00 - 17:55'),
 (7, '18:00 - 18:55'),
 (8, '19:00 - 19:55');
+
+CREATE TABLE `eventos` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(120) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `descripcion` text,
+  `disponibles` int DEFAULT NULL,
+  `categoria_id` int NOT NULL,
+  `dia_id` int NOT NULL,
+  `hora_id` int NOT NULL,
+  `ponente_id` int NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_eventos_categorias_idx` (`categoria_id`),
+  KEY `fk_eventos_dias1_idx` (`dia_id`),
+  KEY `fk_eventos_horas1_idx` (`hora_id`),
+  KEY `fk_eventos_ponentes1_idx` (`ponente_id`),
+  CONSTRAINT `fk_eventos_categorias` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`),
+  CONSTRAINT `fk_eventos_dias1` FOREIGN KEY (`dia_id`) REFERENCES `dias` (`id`),
+  CONSTRAINT `fk_eventos_horas1` FOREIGN KEY (`hora_id`) REFERENCES `horas` (`id`),
+  CONSTRAINT `fk_eventos_ponentes1` FOREIGN KEY (`ponente_id`) REFERENCES `ponentes` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+CREATE TABLE `registros` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `paquete_id` int DEFAULT NULL,
+  `pago_id` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `token` varchar(8) DEFAULT NULL,
+  `usuario_id` int DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `usuarioId` (`usuario_id`),
+  KEY `paquete_id` (`paquete_id`),
+  CONSTRAINT `registros_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`),
+  CONSTRAINT `registros_ibfk_2` FOREIGN KEY (`paquete_id`) REFERENCES `paquetes` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+CREATE TABLE `paquetes` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(30) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+INSERT INTO `paquetes` (`id`, `nombre`) VALUES
+(1, 'Presencial'),
+(2, 'Virtual'),
+(3, 'Gratis');
+
+CREATE TABLE `regalos` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+INSERT INTO `regalos` (`id`, `nombre`) VALUES
+(1, 'Paquete Stickers'),
+(2, 'Camisa Mujer - Chica'),
+(3, 'Camisa Mujer - Mediana'),
+(4, 'Camisa Mujer - Grande'),
+(5, 'Camisa Mujer - XL'),
+(6, 'Camisa Hombre - Chica'),
+(7, 'Camisa Hombre - Mediana'),
+(8, 'Camisa Hombre - Grande'),
+(9, 'Camisa Hombre - XL');
