@@ -411,7 +411,7 @@ h3 {
   }
 }
 .paquetes__submit {
-  background-color: #007df4;
+  background-color: #397b00;
   padding: 1.5rem 4rem;
   color: #FFFFFF;
   font-size: 1.8rem;
@@ -425,7 +425,7 @@ h3 {
   margin-top: 3rem;
 }
 .paquetes__submit:hover {
-  background-color: #0063c1;
+  background-color: #214800;
   cursor: pointer;
 }
 
@@ -455,7 +455,7 @@ h3 {
 .paquete__precio {
   font-size: 6rem;
   margin: 3rem 0;
-  color: #007df4;
+  color: #397b00;
   font-weight: 900;
   text-align: center;
 }
@@ -537,7 +537,7 @@ h3 {
 }
 
 .eventos__heading {
-  color: #007df4;
+  color: #397b00;
   margin: 5rem 0;
   text-align: left;
   font-size: clamp(2rem, -0.8rem + 8vw, 6rem);
@@ -566,12 +566,12 @@ h3 {
 .evento__informacion {
   padding: 2rem;
   border-radius: 1rem;
-  background-color: #007df4;
+  background-color: #397b00;
   color: #FFFFFF;
   transition: 300ms background-color ease;
 }
 .evento__informacion:hover {
-  background-color: #0063c1;
+  background-color: #214800;
 }
 .evento__nombre {
   font-size: 2rem;
@@ -626,8 +626,8 @@ h3 {
 }
 
 .resumen {
-  background-image: linear-gradient(to right, rgba(0, 125, 244, 0.7), rgba(0, 125, 244, 0.9)), url(../img/bg_numeros.jpg);
-  background-image: linear-gradient(to right, rgba(0, 125, 244, 0.7), rgba(0, 125, 244, 0.9)), image-set(url("../img/bg_numeros.avif") 1x, url("../img/bg_numeros.webp") 1x, url("../img/bg_numeros.jpg") 1x);
+  background-image: linear-gradient(to right, rgba(57, 123, 0, 0.7), rgba(57, 123, 0, 0.9)), url(../img/bg_numeros.jpg);
+  background-image: linear-gradient(to right, rgba(57, 123, 0, 0.7), rgba(57, 123, 0, 0.9)), image-set(url("../img/bg_numeros.avif") 1x, url("../img/bg_numeros.webp") 1x, url("../img/bg_numeros.jpg") 1x);
   padding: 12rem 0;
   background-size: cover;
   background-position: center;
@@ -731,7 +731,7 @@ h3 {
   margin-top: 1.5rem;
 }
 .speaker__listado-skills > li {
-  background-color: #007df4;
+  background-color: #397b00;
   padding: 1rem;
   border-radius: 0.5rem;
   font-size: 1.4rem;
@@ -828,7 +828,7 @@ h3 {
   background-color: #00c8c2;
 }
 .boleto--gratis {
-  background-color: #007df4;
+  background-color: #397b00;
 }
 .boleto__logo {
   color: #FFFFFF;
@@ -859,7 +859,7 @@ h3 {
   justify-content: center;
 }
 .boleto__enlace {
-  background-color: #007df4;
+  background-color: #397b00;
   padding: 1.5rem 4rem;
   color: #FFFFFF;
   font-size: 1.8rem;
@@ -873,7 +873,7 @@ h3 {
   width: auto;
 }
 .boleto__enlace:hover {
-  background-color: #0063c1;
+  background-color: #214800;
   cursor: pointer;
 }
 .boleto--acceso {
@@ -949,7 +949,7 @@ h3 {
   text-align: center;
 }
 .pagina_404__enlace {
-  color: #007df4;
+  color: #397b00;
 }
 
 .formulario {
@@ -1026,7 +1026,7 @@ h3 {
   margin-top: 1.5rem;
 }
 .formulario__listado > li {
-  background-color: #007df4;
+  background-color: #397b00;
   padding: 1rem;
   border-radius: 0.5rem;
   font-size: 1.4rem;
@@ -1034,7 +1034,7 @@ h3 {
   color: #FFFFFF;
 }
 .formulario__submit {
-  background-color: #007df4;
+  background-color: #397b00;
   padding: 1.5rem 4rem;
   color: #FFFFFF;
   font-size: 1.8rem;
@@ -1049,7 +1049,7 @@ h3 {
   align-self: flex-start;
 }
 .formulario__submit:hover {
-  background-color: #0063c1;
+  background-color: #214800;
   cursor: pointer;
 }
 .formulario__submit--registrar, .formulario__submit--full {
@@ -1086,8 +1086,8 @@ h3 {
   }
 }
 .horas__hora, .horas__hora--deshabilitada, .horas__hora--seleccionada {
-  color: #007df4;
-  border: 1px solid #007df4;
+  color: #397b00;
+  border: 1px solid #397b00;
   border-radius: 1rem;
   padding: 1rem;
   text-align: center;
@@ -1096,7 +1096,7 @@ h3 {
   cursor: pointer;
 }
 .horas__hora--seleccionada {
-  background-color: #007df4;
+  background-color: #397b00;
   color: #FFFFFF;
 }
 .horas__hora--deshabilitada {
@@ -1138,7 +1138,7 @@ h3 {
   font-weight: 700;
 }
 .header__enlace:hover, .header__submit:hover {
-  color: #007df4;
+  color: #397b00;
   cursor: pointer;
 }
 .header__form {
@@ -1154,7 +1154,7 @@ h3 {
 }
 .header__logo {
   font-size: clamp(2rem, -0.8rem + 10vw, 8rem);
-  background: linear-gradient(to right, #007df4, #00c8c2);
+  background: linear-gradient(to right, #397b00, #00c8c2);
   background-clip: text;
   color: transparent;
   text-align: center;
@@ -1207,7 +1207,7 @@ h3 {
 }
 
 .barra {
-  background-color: #007df4;
+  background-color: #397b00;
 }
 .barra__contenido {
   width: min(95%, 140rem);
@@ -1255,11 +1255,11 @@ h3 {
 }
 .navegacion__enlace--actual, .navegacion__enlace:hover {
   background-color: #FFFFFF;
-  color: #007df4;
+  color: #397b00;
 }
 
 .footer {
-  background-color: #007df4;
+  background-color: #397b00;
   margin-top: 5rem;
   padding-top: 3rem;
   color: #FFFFFF;
@@ -1298,7 +1298,7 @@ h3 {
   }
 }
 .footer__copyright {
-  background-color: #0063c1;
+  background-color: #214800;
   margin: 3rem 0 0 0;
   padding: 2rem 0;
   text-align: center;
@@ -1415,7 +1415,7 @@ h3 {
   font-weight: 700;
 }
 .dashboard__submit--logout:hover {
-  color: #007df4;
+  color: #397b00;
   cursor: pointer;
 }
 .dashboard__grid {
@@ -1473,7 +1473,7 @@ h3 {
   }
 }
 .dashboard__boton {
-  background-color: #007df4;
+  background-color: #397b00;
   padding: 1.5rem 4rem;
   color: #FFFFFF;
   font-size: 1.8rem;
@@ -1488,7 +1488,7 @@ h3 {
   font-size: 1.4rem;
 }
 .dashboard__boton:hover {
-  background-color: #0063c1;
+  background-color: #214800;
   cursor: pointer;
 }
 @media (min-width: 768px) {
@@ -1543,7 +1543,7 @@ h3 {
   font-weight: 700;
 }
 .table__accion--editar {
-  color: #007df4;
+  color: #397b00;
 }
 .table__accion--eliminar {
   color: rgb(169, 0, 0);
@@ -1567,16 +1567,16 @@ h3 {
   }
 }
 .paginacion__enlace {
-  color: #007df4;
+  color: #397b00;
   font-size: 1.6rem;
 }
 .paginacion__enlace--texto {
   padding: 1rem;
   border-radius: 0.5rem;
-  border: 1px solid #007df4;
+  border: 1px solid #397b00;
 }
 .paginacion__enlace--texto:hover {
-  background-color: #007df4;
+  background-color: #397b00;
   color: #FFFFFF;
 }
 .paginacion__enlace--numero {
@@ -1608,8 +1608,8 @@ h3 {
   grid-template-columns: repeat(1, 1fr);
 }
 .listado-ponentes__ponente, .listado-ponentes__ponente--seleccionado {
-  color: #007df4;
-  border: 1px solid #007df4;
+  color: #397b00;
+  border: 1px solid #397b00;
   padding: 1rem;
   border-radius: 1rem;
   text-align: center;
@@ -1618,7 +1618,7 @@ h3 {
   cursor: pointer;
 }
 .listado-ponentes__ponente--seleccionado {
-  background-color: #007df4;
+  background-color: #397b00;
   color: #FFFFFF;
 }
 
@@ -1708,7 +1708,7 @@ h3 {
   font-size: clamp(2rem, -0.8rem + 10vw, 5rem);
 }
 .eventos-registro__heading--conferencias {
-  color: #007df4;
+  color: #397b00;
 }
 .eventos-registro__heading--workshops {
   color: #00c8c2;

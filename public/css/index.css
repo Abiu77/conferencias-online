@@ -14,3 +14,7 @@
   font-family: "Geist";
   color-scheme: dark;
 }
+
+.header {
+  position: relative;
+}

@@ -3,6 +3,7 @@
 
 .barra {
     background-color: v.$azul;
+
     &__contenido {
         @include m.contenedor;
         display: flex;
