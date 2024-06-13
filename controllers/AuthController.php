@@ -33,6 +33,13 @@ class AuthController {
                         $_SESSION['apellido'] = $usuario->apellido;
                         $_SESSION['email'] = $usuario->email;
                         $_SESSION['admin'] = $usuario->admin ?? null;
+
+                        // Redirección
+                        if($usuario->admin) {
+                            header('Location: /admin/dashboard');
+                        } else {
+                            header('Location: /finalizar-registro');
+                        }
                         
                     } else {
                         Usuario::setAlerta('error', 'Password Incorrecto');
@@ -190,17 +197,18 @@ class AuthController {
 
                 // Redireccionar
                 if($resultado) {
-                    header('Location: /');
+                    //mostrar mensaje de exito
+                    Usuario::setAlerta('exito', 'Password Actualizado Exitosamente!');
+                    // Redireccionar al login
+                    header('Refresh: 5; url= /login');  
                 }
             }
         }
 
-        $alertas = Usuario::getAlertas();
-        
         // Muestra la vista
         $router->render('auth/reestablecer', [
             'titulo' => 'Reestablecer Password',
-            'alertas' => $alertas,
+            'alertas' => Usuario::getAlertas(),
             'token_valido' => $token_valido
         ]);
     }
@@ -223,7 +231,7 @@ class AuthController {
 
         if(empty($usuario)) {
             // No se encontró un usuario con ese token
-            Usuario::setAlerta('error', 'Token No Válido');
+            Usuario::setAlerta('error', 'Token No Válido, la cuenta no se confirmó');
         } else {
             // Confirmar la cuenta
             $usuario->confirmado = 1;
@@ -233,7 +241,7 @@ class AuthController {
             // Guardar en la BD
             $usuario->guardar();
 
-            Usuario::setAlerta('exito', 'Cuenta Comprobada Correctamente');
+            Usuario::setAlerta('exito', 'Cuenta Comprobada Exitosamente');
         }
 
      
