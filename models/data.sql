@@ -89,6 +89,12 @@ CREATE TABLE `eventos` (
   CONSTRAINT `fk_eventos_ponentes1` FOREIGN KEY (`ponente_id`) REFERENCES `ponentes` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
+CREATE TABLE `paquetes` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(30) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
 CREATE TABLE `registros` (
   `id` int NOT NULL AUTO_INCREMENT,
   `paquete_id` int DEFAULT NULL,
@@ -101,12 +107,6 @@ CREATE TABLE `registros` (
   CONSTRAINT `registros_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`),
   CONSTRAINT `registros_ibfk_2` FOREIGN KEY (`paquete_id`) REFERENCES `paquetes` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
-CREATE TABLE `paquetes` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(30) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 INSERT INTO `paquetes` (`id`, `nombre`) VALUES
 (1, 'Presencial'),
