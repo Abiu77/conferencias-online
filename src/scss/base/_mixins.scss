@@ -73,7 +73,6 @@
     margin: 6rem 0 3rem 0;
     text-align: center;
 }
-
 @mixin descripcion-pagina {
     text-align: center;
     font-size: 1.8rem;
@@ -81,18 +80,14 @@
     color: v.$gris-oscuro;
     margin-bottom: 5rem;
 }
-
 @mixin texto-fluido($min, $max) {
-   font-size: clamp($min, -0.8rem + 10vw , $max); 
+    font-size: clamp($min, -0.8rem + 10vw ,$max);
 }
-
 @mixin texto-degradado($inicio, $final) {
     background: linear-gradient(to right, $inicio, $final);
     background-clip: text;
     color: transparent;
-    // -webkit-text-fill-color: transparent;
 }
-
 @mixin logo {
     color: v.$blanco;
     text-align: center;
@@ -103,9 +98,8 @@
         margin: 0;
     }
 }
-
 @mixin menu-social($color, $size) {
-    
+
     &__enlace {
 
         &::before {
@@ -117,21 +111,12 @@
             -webkit-font-smoothing: antialiased;
             font-family: "Font Awesome 6 Brands";
         }
+
         &[href*="facebook.com"]::before {
             content: "\f39e";
         }
         &[href*="github.com"]::before {
             content: "\f09b";
-        }
-        &[href*="t.me/Leeo23"]::before {
-            content: "\f2c6";
-        }
-        &[href*="fernando-herrera.com"]::before {
-            content: "\f1a0";
-        }
-        
-        &[href*="linkedin.com"]::before {
-            content: "\f0e1";
         }
         
         &[href*="tiktok.com"]::before {
@@ -153,21 +138,21 @@
     }
 }
 
-@mixin enlace {
+@mixin enlace{
+    all: unset;
     color: v.$blanco;
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: v.$bold;
-    background-color: transparent;
-    border: none;
 
     &:hover {
         color: v.$azul;
+        cursor: pointer;
     }
 }
 
 @mixin shadow {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 @mixin reset-lista {
@@ -177,7 +162,7 @@
 }
 
 @mixin tags {
-    @include reset-lista();
+    @include reset-lista;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -188,8 +173,8 @@
         padding: 1rem;
         border-radius: .5rem;
         font-size: 1.4rem;
+        font-weight: v.$bold;
         color: v.$blanco;
-        font-size: v.$bold;
     }
 }
 
@@ -205,5 +190,5 @@
 }
 
 @mixin bg-gradient($bg_color) {
-    background-image: linear-gradient(to left top, $bg_color, lighten($bg_color, 25%));
+    background-image: linear-gradient(to left top, $bg_color, lighten($bg_color, 15%));
 }

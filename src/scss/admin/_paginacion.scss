@@ -17,7 +17,7 @@
     &__enlace {
         color: v.$azul;
         font-size: 1.6rem;
-        
+
         &--texto {
             padding: 1rem;
             border-radius: .5rem;
@@ -28,9 +28,8 @@
                 color: v.$blanco;
             }
         }
-
         &--numero {
-            font-weight: v.$bold; 
+            font-weight: v.$bold;
             display: none;
             @include m.tablet {
                 display: inline;

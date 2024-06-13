@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Geist";
+  src:
+    url("/fonts/geist/VF.ttf") format("truetype"),
+    url("/fonts/geist/VF.woff2") format("woff2 variations"),
+    url("/fonts/geist/VF.woff") format("woff");
+  font-weight: 100 900;
+  font-stretch: 50% 200%;
+  font-display: swap;
+  font-style: normal;
+}
+
+* {
+  font-family: "Geist";
+  color-scheme: dark;
+}

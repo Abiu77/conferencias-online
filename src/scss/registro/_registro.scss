@@ -1,6 +1,7 @@
 @use 'base/mixins' as m;
 @use 'base/variables' as v;
 
+
 .eventos-registro {
     @include m.contenedor;
     @include m.tablet {
@@ -8,20 +9,17 @@
         align-items: flex-start;
         gap: 2rem;
     }
-
     &__listado {
         @include m.tablet {
             flex: 0 0 60%;
         }
     }
-
     &__grid {
         @include m.grid(1, 3rem);
-        @include m.tablet {
-            @include m.grid(2, 3rem); 
+        @include m.desktop {
+            @include m.grid(2, 3rem);
         }
     }
-
     &__heading {
         &--conferencias,
         &--workshops {
@@ -36,7 +34,6 @@
             margin-top: 5rem;
         }
     }
-
     &__fecha {
         margin: 6rem 0 3rem 0;
     }
@@ -52,11 +49,9 @@
         position: sticky;
         top: 3rem;
     }
-
     &__heading {
         margin: 0 0 3rem 0;
     }
-
     &__evento {
         display: flex;
         justify-content: space-between;
@@ -66,13 +61,11 @@
             background-color: darken(v.$gris-claro, 3);
         }
     }
-
     &__nombre {
         font-size: 2rem;
         font-weight: v.$bold;
         margin: 0;
     }
-
     &__eliminar {
         all: unset;
         color: v.$rojo;
@@ -95,7 +88,6 @@
         font-weight: v.$bold;
         margin-bottom: 1rem;
     }
-
     &__select {
         width: 100%;
         background-color: v.$blanco;
@@ -103,5 +95,4 @@
         padding: 1rem;
         border-radius: .5rem;
     }
-
 }

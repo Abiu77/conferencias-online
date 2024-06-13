@@ -1,10 +1,9 @@
-@use 'base/mixins' as m;
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 
 .formulario {
     display: flex;
     flex-direction: column;
-
     &__fieldset {
         border: none;
         margin-top: 1rem;
@@ -20,27 +19,25 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        margin: .5rem 0;
+        margin: 1.5rem 0;
     }
-
-    &__contenedor-icono{
-            display: flex;
-            border-radius: .5rem;
-            overflow: hidden;
-
+    &__contenedor-icono {
+        display: flex;
+        border-radius: .5rem;
+        overflow: hidden;
     }
     &__icono {
-            background-color: v.$gris-oscuro;
-            width: 4rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        background-color: v.$gris-oscuro;
+        width: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         i {
             color: v.$blanco;
             font-size: 2rem;
-        }    
+        }
     }
-    
     &__label {
         display: block;
         font-size: 1.8rem;
@@ -52,7 +49,7 @@
         border: 1px solid darken(v.$gris-claro, 20);
         border-radius: .5rem;
 
-        &--file{
+        &--file {
             border: none;
         }
         &--sociales {
@@ -63,7 +60,7 @@
         }
     }
 
-    &__radio {
+    &__radio{
         display: flex;
         gap: 2rem;
     }

@@ -2,7 +2,6 @@
 @use 'base/variables' as v;
 
 .speakers {
-
     &__grid {
         @include m.contenedor;
         @include m.grid(1, 5rem);
@@ -37,19 +36,15 @@
             min-width: unset;
         }
     }
-
-
     &__ubicacion {
         color: v.$gris;
         margin: 1rem 0;
         font-size: 2rem;
-        line-height: 1;
+        line-height: 1.5;
     }
-
     &__listado-skills {
         @include m.tags;
     }
-
 }
 
 .speaker-sociales {
