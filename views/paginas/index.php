@@ -6,7 +6,7 @@ include_once __DIR__ . '/conferencias.php';
     <div class="resumen__grid">
         <div <?php aos_animation(); ?> class="resumen__bloque">
             <p class="resumen__texto resumen__texto--numero"><?php echo $ponentes_total ?></p>
-            <p class="resumen__texto">Speakers</p>
+            <p class="resumen__texto">Oradores</p>
         </div>
 
         <div <?php aos_animation(); ?> class="resumen__bloque">
@@ -27,7 +27,7 @@ include_once __DIR__ . '/conferencias.php';
 </section>
 
 <section class="speakers">
-    <h2 class="speakers__heading">Speakers</h2>
+    <h2 class="speakers__heading">Oradores</h2>
     <p class="speakers__descripcion">Conoce a nuestros expertos de DevWebCamp</p>
 
     <div class="speakers__grid">
@@ -108,25 +108,25 @@ include_once __DIR__ . '/conferencias.php';
 
 <section class="boletos">
     <h2 class="boletos__heading">Boletos & Precios</h2>
-    <p class="boletos__descripcion">Precio para DevWebCamp</p>
+    <p class="boletos__descripcion">Precio para Conferencia</p>
 
     <div class="boletos__grid">
         <div <?php aos_animation();?>  class="boleto boleto--presencial">
-            <h4 class="boleto__logo">&#60;DevWebCamp /></h4>
+            <h4 class="boleto__logo">&#60;Conferencia Abiu /></h4>
             <p class="boleto__plan">Presencial</p>
-            <p class="boleto__precio"><i class="fa-sharp fa-solid fa-dollar-sign"></i>200</p>
+            <p class="boleto__precio"></i>S/ 200</p>
         </div>
 
         <div <?php aos_animation();?>  class="boleto boleto--virtual">
-            <h4 class="boleto__logo">&#60;DevWebCamp /></h4>
+            <h4 class="boleto__logo">&#60;Conferencia Abiu /></h4>
             <p class="boleto__plan">Virtual</p>
-            <p class="boleto__precio"><i class="fa-sharp fa-solid fa-dollar-sign"></i>50</p>
+            <p class="boleto__precio"></i>S/ 50</p>
         </div>
 
         <div <?php aos_animation();?>  class="boleto boleto--gratis">
-            <h4 class="boleto__logo">&#60;DevWebCamp /></h4>
+            <h4 class="boleto__logo">&#60;Conferencia Abiu /></h4>
             <p class="boleto__plan">Gratis</p>
-            <p class="boleto__precio"> Gratis - <i class="fa-sharp fa-solid fa-dollar-sign"></i>0</p>
+            <p class="boleto__precio"> Gratis - </i> S/ 0</p>
         </div>
     </div>
 

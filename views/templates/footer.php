@@ -2,10 +2,10 @@
     <div class="footer__grid">
         <div class="footer__contenido">
             <h3 class="footer__logo">
-                    &#60;DevWebCamp />
+                    &#60;Conferencias-Abiu />
             </h3>
             <p class="footer__texto">
-                DevWebCamp es una conferencia para desarrolladores de todos los niveles, se lleva a cabo de forma presencial y en línea.
+                Conferencias-Abiu es una conferencia para desarrolladores de todos los niveles, se lleva a cabo de forma presencial y en línea.
             </p>
         </div>
         <nav class="menu-redes"> 
@@ -28,7 +28,7 @@
     </div>
 
     <p class="footer__copyright">
-        DevWebCamp
+        Conferencias-Abiu
         <span class="footer__copyright--regular">
             - Todos los derechos reservados <?php echo date('Y'); ?>
         </span>
