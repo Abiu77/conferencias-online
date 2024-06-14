@@ -86,24 +86,33 @@ class AuthController
                     $alertas = Usuario::getAlertas();
                 } else {
                     // Hashear el password
-                    $usuario->hashPassword();
+                    //$usuario->hashPassword();
 
                     // Eliminar password2
                     unset($usuario->password2);
 
-                    // Generar el Token
-                    $usuario->crearToken();
+                    // Marcar la cuenta como confirmada directamente
+                    $usuario->confirmado = 1;
+                    $usuario->token = null;
 
                     // Crear un nuevo usuario
                     $resultado =  $usuario->guardar();
 
-                    // Enviar email
-                    $email = new Email($usuario->email, $usuario->nombre, $usuario->token);
-                    $email->enviarConfirmacion();
-
-
                     if ($resultado) {
-                        header('Location: /mensaje');
+                        // Iniciar la sesión directamente después del registro
+                        session_start();
+                        $_SESSION['id'] = $usuario->id;
+                        $_SESSION['nombre'] = $usuario->nombre;
+                        $_SESSION['apellido'] = $usuario->apellido;
+                        $_SESSION['email'] = $usuario->email;
+                        $_SESSION['admin'] = $usuario->admin ?? null;
+
+                        // Redirección
+                        if ($usuario->admin) {
+                            header('Location: /admin/dashboard');
+                        } else {
+                            header('Location: /finalizar-registro');
+                        }
                     }
                 }
             }
