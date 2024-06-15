@@ -8,14 +8,14 @@
 
         <div class="eventos__listado slider swiper">
             <div class="swiper-wrapper">
-                if (isset($array['conferencias_v'])) {
+                <!-- if (isset($array['conferencias_v'])) {
                 $conferencias = $array['conferencias_v'];
                 // tu código para manejar $conferencias
                 } else {
                 // maneja el caso donde la clave no existe, por ejemplo:
                 $conferencias = []; // asigna un array vacío o maneja el error apropiadamente
                 echo "No se encontraron conferencias.";
-                }
+                } -->
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -25,9 +25,7 @@
 
         <div class="eventos__listado slider swiper">
             <div class="swiper-wrapper">
-                <?php foreach ($eventos['conferencias_s'] as $evento) { ?>
-                    <?php include __DIR__ . '../../templates/evento.php'; ?>
-                <?php } ?>
+                <!--  -->
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -40,9 +38,7 @@
 
         <div class="eventos__listado slider swiper">
             <div class="swiper-wrapper">
-                <?php foreach ($eventos['workshops_v'] as $evento) { ?>
-                    <?php include __DIR__ . '../../templates/evento.php'; ?>
-                <?php } ?>
+
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -52,9 +48,7 @@
 
         <div class="eventos__listado slider swiper">
             <div class="swiper-wrapper">
-                <?php foreach ($eventos['workshops_s'] as $evento) { ?>
-                    <?php include __DIR__ . '../../templates/evento.php'; ?>
-                <?php } ?>
+
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>

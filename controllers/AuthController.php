@@ -26,7 +26,7 @@ class AuthController
                     Usuario::setAlerta('error', 'El Usuario No Existe o no esta confirmado');
                 } else {
                     // El Usuario existe
-                    if (password_verify($_POST['password'], $usuario->password)) {
+                    if ($_POST['password'] === $usuario->password) {
 
                         // Iniciar la sesión
                         session_start();
